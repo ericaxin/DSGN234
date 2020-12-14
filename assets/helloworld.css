@@ -1,0 +1,88 @@
+body {
+  font-family: gill sans;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.name{
+	font-size: 5vh;
+	letter-spacing: 0.5vh;
+}
+
+.class{
+	font-size: 2vh;
+	margin-top: 0.5vh;
+	position: relative;
+	left: -2vh;	}
+
+.title{
+	font-weight: 600;
+	margin-bottom: 0.5vh;
+	font-size: 2.5vh;
+	color: black;}
+
+.strike{
+	text-decoration: line-through;
+	color: black;
+	position: relative;
+	left: 2vh;		
+}
+
+.project{
+	margin: 0;
+	position: relative;
+	left: 2vh;
+  cursor: pointer;
+}
+
+.project:hover{
+	color: black;
+}
+
+.list{
+	font-size: 2.3vh;
+	margin-top: 7vh;
+	color: #5c5c5c;
+	line-height: 3vh;
+}
+
+.frame{
+	position: relative;
+	margin: auto;
+	left: 30vw;
+	top:-57vh;
+}
+
+.project:before, .project:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 57%;
+  margin-top: -0.5px;
+  background: black;
+}
+
+.project:before {
+  left: -2.5px;
+}
+.project:after {
+  right: 2.5px;
+  background: black;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.project:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.full{
+	margin-left: 64vw;
+}
+.project:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
